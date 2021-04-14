@@ -6,8 +6,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				greenLight: '#42E2B8',
-				greyBlack: '#0F0A0A',
+				greenLight: '#5A8FC3',
+				textColor: '#F3F9FE',
 				morado: '#8884FF',
 				amarrillo: '#FAD7A1',
 				rojoBlack: '#E96D71',
@@ -39,7 +39,14 @@ module.exports = {
 				19: '4.75rem',
 			},
 			boxShadow: {
-				showTitle: '-4px 4px 0px #FFFFFF',
+				showTitle:
+					'rgba(182, 209, 236, 0.4) -5px 5px, rgba(182, 209, 236, 0.3) -10px 10px, rgba(182, 209, 236, 0.2) -15px 15px, rgba(182, 209, 236, 0.1) -20px 20px, rgba(182, 209, 236, 0.05) -25px 25px',
+			},
+			screens: {
+				xs: '360px',
+			},
+			minWidth: {
+				300: '300px',
 			},
 		},
 	},

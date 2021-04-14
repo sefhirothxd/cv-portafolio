@@ -4,12 +4,12 @@ function Header() {
 	return (
 		<div className="bg-transparent flex justify-between pt-4 lg:pb-10 items-center ">
 			<div>
-				<h1 className="font-black text-3xl">LOGO</h1>
+				<h1 className="font-black text-white text-3xl">LOGO</h1>
 			</div>
 			<nav className="hidden md:block">
-				<ul className="flex justify-center items-center gap-6 text-sm text-greyBlack font-body font-bold">
+				<ul className="flex justify-center items-center gap-6 text-sm text-textColor font-body font-bold">
 					<li>
-						<a href="">HOLA</a>
+						<a href="#">HOLA</a>
 					</li>
 					<li className="opacity-50">
 						<a href="#proyectos">PROYECTOS</a>
