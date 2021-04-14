@@ -10,7 +10,7 @@ const Presentacion = () => {
 			/>
 			<article className="flex flex-col font-body max-w-lg md:pt-32 ">
 				<p className="text-5xl pb-5 font-bold text-greyBlack">¡Hola a todos!</p>
-				<h1 className="text-5xl font-bold pb-8 text-greyBlack">Soy Bryan</h1>
+				<h1 className="text-5xl font-bold pb-8 text-greyBlack">Soy Elisa</h1>
 				<p className="leading-7 text-greyBlack text-base">
 					Una Frontend Developer que le encanta implementar diseños que inspiran
 					y atraen a las personas.

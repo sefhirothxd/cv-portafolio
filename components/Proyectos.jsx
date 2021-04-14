@@ -3,7 +3,7 @@ import React from 'react';
 function Proyectos() {
 	return (
 		<div className="mt-20 mb-12">
-			<article className="mb-19 lg:py-52 max-w-4xl mx-auto">
+			<article className="mb-19 lg:py-52 max-w-4xl mx-auto" id="proyectos">
 				<p className="pb-5 font-body lg:text-34px lg:leading-normal text-greyBlack text-2xl text-center font-medium leading-10">
 					A lo largo de mi carrera como Frontend, he tenido el privilegio de
 					trabajar en proyectos retadores e increíbles
