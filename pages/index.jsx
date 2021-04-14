@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 export default function Home() {
 	return (
 		<div className=" backColores px-5">
-			<div className="max-w-960 mx-auto">
+			<div className="max-w-1132 mx-auto">
 				<Header />
 				<Presentacion />
 				<Proyectos />

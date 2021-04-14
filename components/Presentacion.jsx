@@ -2,13 +2,13 @@ import React from 'react';
 
 const Presentacion = () => {
 	return (
-		<div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between ">
+		<div className="flex flex-col md:flex-row-reverse  md:justify-between ">
 			<img
 				src="/person-fondo.svg"
 				alt="persona con fondo morado y verde"
-				className="md:mx-auto lg:mx-0 lg:w-680"
+				className="md:mx-auto lg:mx-0 lg:w-680 "
 			/>
-			<article className="flex flex-col font-body max-w-lg ">
+			<article className="flex flex-col font-body max-w-lg md:pt-32 ">
 				<p className="text-5xl pb-5 font-bold text-greyBlack">¡Hola a todos!</p>
 				<h1 className="text-5xl font-bold pb-8 text-greyBlack">Soy Bryan</h1>
 				<p className="leading-7 text-greyBlack text-base">

@@ -2,12 +2,12 @@ import React from 'react';
 
 const Contacto = () => {
 	return (
-		<div className="py-20">
+		<div className="py-20 max-w-550 mx-auto ">
 			<div className="mb-4">
-				<h3 className="shadow-showTitle mb-5 inline-block bg-greyBlack py-1 px-2 text-greenLight text-2xl">
+				<h3 className="md:block md:text-center lg:text-34px py-4 shadow-showTitle mb-5 inline-block bg-greyBlack px-2 text-greenLight text-2xl">
 					HABLEMOS
 				</h3>
-				<p className="text-greyBlack text-base leading-6 font-body font-normal">
+				<p className="md:text-center text-greyBlack text-base leading-6 font-body font-normal">
 					Si está interesado en trabajar conmigo en su próximo proyecto, no dude
 					en ponerse en contacto conmigo.
 				</p>

@@ -20,12 +20,18 @@ module.exports = {
 			},
 			maxWidth: {
 				960: '960px',
+				1024: '1024px',
+				1280: '1280px',
+				1132: '1132px',
+				550: '550px',
+				340: '340px',
 			},
 			width: {
 				680: '680px',
 			},
 			fontSize: {
 				'14px': '14px',
+				'34px': '34px',
 			},
 			margin: {
 				17: '4.25rem',
