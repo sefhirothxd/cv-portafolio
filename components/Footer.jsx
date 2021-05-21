@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<div className="pb-6 lg:flex lg:flex-row-reverse lg:justify-between lg:gap-28 lg:items-center">
-			<div className="flex justify-start gap-x-4 mt-4">
+		<div className="pb-6 lg:flex lg:flex-row-reverse lg:justify-between lg:gap-10 xl:gap-28 lg:items-center">
+			<div className="flex  justify-center items-center gap-x-4 mb-8 lg:mb-0">
 				<a
 					href="https://www.facebook.com/bveraca"
 					target="_blank"
@@ -33,8 +33,8 @@ const Footer = () => {
 					<img src="/icon-twitter.svg" alt="" />
 				</a>
 			</div>
-			<div className="text-center lg:flex">
-				<p className="text-textColor lg:mr-1 text-base font-body font-normal mb-2">
+			<div className="text-center lg:flex xl:pl-16">
+				<p className="text-textColor lg:mr-4 text-base font-body font-normal mb-2">
 					Hecho por Bryan Vera
 				</p>
 				<p className="text-textColor text-base font-body tex font-normal">
