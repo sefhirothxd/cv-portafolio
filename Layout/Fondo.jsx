@@ -5,7 +5,7 @@ const Fondo = ({children}) => {
     return (
         <>
             <Particles
-				className="h-screen w-full  fixed z-0"
+				className="h-screen w-full fixed z-0 "
 				id="particles-js"
 				params={{
 					particles: {
@@ -42,7 +42,7 @@ const Fondo = ({children}) => {
 					},
 				}}
 			/>
-            <main>{children}</main>
+            {children}
         </>
     )
 }
