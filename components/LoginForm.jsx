@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-
+import axios from 'axios';
+import { getLogin, getToken } from '../redux/userDuck';
+import { useRouter } from 'next/router'
+import { useSelector, useDispatch } from 'react-redux';
+import { toast } from 'react-toastify';
 
 const LoginForm = () => {
 	const {
@@ -9,14 +13,32 @@ const LoginForm = () => {
 		formState: { errors },
 		reset,
 	} = useForm();
-	const onSubmit = (data) => {
-		console.log(data);
+
+	const dispatch = useDispatch();
+	const router = useRouter();
+
+	const onSubmit = async (data) => {
+		try {
+			const res = await dispatch(getLogin(data));
+			// console.log(res.response.data.error.message);
+			if (res.data) {
+				toast.success(`acabas de iniciar session`);
+				router.push('/message');
+			} else {
+				toast.error(`${res.response.data.error.message}`);
+			}
+		} catch (error) {
+			console.log(error);
+		}
 	};
 	return (
 		<form
-			className="flex flex-col gap-3  border-2 rounded-lg border-white text-white py-20 px-10"
+			className="flex flex-col gap-3   border-2 rounded-lg border-white py-10 px-10"
 			onSubmit={handleSubmit(onSubmit)}
 		>
+			<h1 className="text-white text-3xl font-extrabold text-center pb-10 ">
+				Login
+			</h1>
 			<input
 				className="pl-2"
 				type="email"
@@ -51,7 +73,7 @@ const LoginForm = () => {
 			)}
 
 			<button
-				className="py-2 px-6 bg-blue-500 hover:bg-blue-600 focus:bg-blue-600 border-black border-2 rounded-lg"
+				className="py-2 px-6 bg-blue-500 hover:bg-blue-600 text-white font-extrabold text-xl focus:bg-blue-600 border-white border-2 rounded-lg"
 				type="submit"
 			>
 				Enviar

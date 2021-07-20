@@ -13,11 +13,11 @@ const Contacto = () => {
 	const onSubmit = async (data) => {
 		console.log(data);
 		await axios
-			.post('http://localhost:3977/api/v1/contacto-mensaje', data)
+			.post('https://back-cv.herokuapp.com/api/contact', data)
 			.then((res) => {
-				console.log(res.data.mensaje.name);
+				console.log(res.data.name);
 				toast.success(
-					`El mensaje fue enviado.Gracias ${res.data.mensaje.name}`
+					`El mensaje fue enviado.Gracias ${res.data.name}`
 				);
 			})
 			.catch((err) => console.log(err));
@@ -41,6 +41,7 @@ const Contacto = () => {
 				</h4>
 				<input
 					{...register('name', { required: true, minLength: 3 })}
+					name="name"
 					className="py-3 mb-4 px-4 rounded-lg w-full"
 					type="text"
 					placeholder="juan"
@@ -64,6 +65,7 @@ const Contacto = () => {
 						minLength: 3,
 						pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
 					})}
+					name="email"
 					type="text"
 					className=" mb-4 py-3 px-4 rounded-lg w-full"
 					placeholder="juan@gmail.com"
@@ -87,19 +89,19 @@ const Contacto = () => {
 					Mensaje <span className="text-red-600">*</span>
 				</h4>
 				<textarea
-					{...register('mensaje', { required: true, minLength: 3 })}
-					name="mensaje"
+					{...register('message', { required: true, minLength: 3 })}
+					name="message"
 					className="py-3 px-4 rounded-lg w-full mb-2"
 					id=""
 					cols="30"
 					rows="5"
 				></textarea>
-				{errors.mensaje && errors.mensaje.type === 'required' && (
+				{errors.message && errors.message.type === 'required' && (
 					<span className="text-red-600 inline-block mb-5 font-body font-bold">
 						Por favor, deje un mensaje
 					</span>
 				)}
-				{errors.mensaje && errors.mensaje.type === 'minLength' && (
+				{errors.message && errors.message.type === 'minLength' && (
 					<span className="text-red-600 inline-block mb-5 font-body font-bold">
 						Ingrese más de 2 caracteres.
 					</span>
