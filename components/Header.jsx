@@ -21,14 +21,16 @@ function Header() {
 			</nav>
 			<div className="bg-greenLight font-bold py-3 px-6 border-black border-solid rounded-full border-2 shadow-caja">
 				<a
-					href="https://doc-00-68-docs.googleusercontent.com/docs/securesc/nk6k6hesbm77dehdadqfvc912nlepctb/5m9arnemig9sin96e65i77oc5lm8phku/1619405025000/05257491431250860507/05257491431250860507/1LW1jhRvnjN6YT05MgO3KbHoBUZDiLMlY?e=download&authuser=0&nonce=255cm4c0floj2&user=05257491431250860507&hash=v2l3gn3i3b02arnae4sng6gc0bphmuqk"
+					href="https://drive.google.com/file/d/1LW1jhRvnjN6YT05MgO3KbHoBUZDiLMlY/view?usp=sharing"
 					className="lg:hidden"
+					target="_blank"
 				>
 					CURRÍCULIM
 				</a>
 				<a
-					href="https://doc-00-68-docs.googleusercontent.com/docs/securesc/nk6k6hesbm77dehdadqfvc912nlepctb/5m9arnemig9sin96e65i77oc5lm8phku/1619405025000/05257491431250860507/05257491431250860507/1LW1jhRvnjN6YT05MgO3KbHoBUZDiLMlY?e=download&authuser=0&nonce=255cm4c0floj2&user=05257491431250860507&hash=v2l3gn3i3b02arnae4sng6gc0bphmuqk"
+					href="https://drive.google.com/file/d/1LW1jhRvnjN6YT05MgO3KbHoBUZDiLMlY/view?usp=sharing"
 					className="lg:block hidden"
+					target="_blank"
 				>
 					DESCARGAR CURRÍCULIM
 				</a>
