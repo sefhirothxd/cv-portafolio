@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className=" backColores px-5">
+    <div className=" backColores px-5 overflow-hidden">
       <div className="max-w-1132 mx-auto relative z-50 ">
         <Header />
         <Presentacion />

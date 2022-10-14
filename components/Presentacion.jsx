@@ -5,7 +5,7 @@ const Presentacion = () => {
     <div className="flex flex-col md:flex-row-reverse  md:justify-between ">
       <figure
         data-aos="fade-left"
-        className="border-2 lg:w-72 lg:self-center h-72 w-72 self-center sm:my-36 xs:my-36  flex items-end  overflow-hidden border-white rounded-full"
+        className="border-2 lg:w-72 lg:self-center h-72 w-72 self-center my-10 md:my-36  flex items-end  overflow-hidden border-white rounded-full"
       >
         <img
           src="/mifoto.png"
