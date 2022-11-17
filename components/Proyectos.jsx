@@ -1,5 +1,5 @@
-import React from "react";
-import MasProyectos from "./MasProyectos";
+import React from 'react';
+import MasProyectos from './MasProyectos';
 
 function Proyectos() {
   return (
@@ -18,6 +18,41 @@ function Proyectos() {
           className="mx-auto animate-bounce mt-4 "
         />
       </article>
+      <div className="lg:flex-row lg:justify-between lg:pb-20 pb-10 flex justify-center flex-col items-center ">
+        <img
+          src="/golden.png"
+          alt=""
+          className="mb-8 w-1/2 lg:2/6 rounded-xl"
+          data-aos="fade-right"
+        />
+        <div data-aos="fade-left" className="lg:pb-20">
+          <article className="mb-5 max-w-md">
+            <h3 className="shadow-showTitle py-4 lg:text-34px mb-5 inline-block bg-greenLight  px-2 text-black text-2xl">
+              Golden envios
+            </h3>
+            <p className="text-textColor text-base leading-6 font-body font-normal lg:pr-4">
+              Demo de un Dashboard page para una empresa de envios de dinero.
+            </p>
+          </article>
+          <div className="flex lg:flex-row-reverse lg:max-w-340 flex-col text-center ">
+            <a
+              target="_blank"
+              href="https://github.com/sefhirothxd/golden-envios"
+              className="flex mb-4 text-textColor lg:mb-0 lg:w-30 items-center justify-center font-body text-14px font-bold border-textColor border-2 rounded-full w-full py-3"
+            >
+              <img className="inline mr-2" src="/icon-github.svg" />
+              VER CÓDIGO
+            </a>
+            <a
+              target="_blank"
+              href="https://golden-envios.vercel.app/"
+              className="bg-greenLight lg:mr-3 lg:w-30 font-body text-14px font-bold border-textColor border-2 rounded-full w-full py-3"
+            >
+              VER PROYECTO
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="lg:flex-row-reverse lg:justify-between lg:pb-20 pb-10 flex justify-center flex-col items-center ">
         <img
           src="/Musicfy.png"
